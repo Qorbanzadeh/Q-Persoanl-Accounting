@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+                                                                                       
+
+                 
+                     
+                                                                                          
+
+           
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:fitsSystemWindows="true" android:tag="layout/fragment_edit_category_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <include layout="@layout/layout_appbar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <RadioButton
+                        android:id="@+id/rbExpense"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="-1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/left_radio_button_drawable"
+                        android:button="@null"
+                        android:tag="binding_1"                              
+                                                                               
+                        android:padding="16dp"
+                        android:text="@string/expense"
+                        android:textAlignment="center"
+                        android:textColor="@color/color_radio_button_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbIncome"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-1dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/right_radio_button_drawable"
+                        android:button="@null"
+                        android:tag="binding_2"                             
+                                                                              
+                        android:padding="16dp"
+                        android:text="@string/income"
+                        android:textAlignment="center"
+                        android:textColor="@color/color_radio_button_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RadioGroup>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayoutName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:hint="@string/hint_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInputCategoryName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:tag="binding_3"            
+                        tools:text="Bill" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="?android:attr/listDivider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Representation Color"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textInputLayoutName" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:scrollbars="none"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chipGroupColor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        app:chipSpacing="8dp"
+                        app:singleLine="true"
+                        app:singleSelection="true">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip"
+                            style="@style/ColorChipStyle"
+                            android:tag="binding_4"                                 
+                                                                                                              
+                                                 
+                            app:chipBackgroundColor="#a2a2a2" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip2"
+                            style="@style/ColorChipStyle"
+                            android:tag="binding_5"                                 
+                                                                                                              
+                                                 
+                            app:chipBackgroundColor="#e91e63" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip3"
+                            style="@style/ColorChipStyle"
+                            android:tag="binding_6"                                 
+                                                                                                              
+                                                 
+                            app:chipBackgroundColor="#2196f3" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip4"
+                            style="@style/ColorChipStyle"
+                            android:tag="binding_7"                                 
+                                                                                                              
+                                                 
+                            app:chipBackgroundColor="#00bcd4" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip5"
+                            style="@style/ColorChipStyle"
+                            android:tag="binding_8"                                 
+                                                                                                              
+                                                 
+                            app:chipBackgroundColor="#4caf50" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip6"
+                            style="@style/ColorChipStyle"
+                            android:tag="binding_9"                                 
+                                                                                                              
+                                                 
+                            app:chipBackgroundColor="#ff5722" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip7"
+                            style="@style/ColorChipStyle"
+                            android:tag="binding_10"                                
+                                                                                                              
+                                                 
+                            app:chipBackgroundColor="#ffc107" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip8"
+                            style="@style/ColorChipStyle"
+                            android:tag="binding_11"                                
+                                                                                                              
+                                                 
+                            app:chipBackgroundColor="#cddc39" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip9"
+                            style="@style/ColorChipStyle"
+                            android:tag="binding_12"                                
+                                                                                                              
+                                                 
+                            app:chipBackgroundColor="#ff9800" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip10"
+                            style="@style/ColorChipStyle"
+                            android:tag="binding_13"                                
+                                                                                                              
+                                                 
+                            app:chipBackgroundColor="#795548" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip11"
+                            style="@style/ColorChipStyle"
+                            android:tag="binding_14"                                
+                                                                                                              
+                                                 
+                            app:chipBackgroundColor="#9C27B0" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip12"
+                            style="@style/ColorChipStyle"
+                            android:tag="binding_15"                                
+                                                                                                              
+                                                 
+                            app:chipBackgroundColor="#3f51b5" />
+                    </com.google.android.material.chip.ChipGroup>
+                </HorizontalScrollView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDelete"
+                    style="@style/AppTheme.DeleteButton"
+                    android:layout_width="0dp"
+                    android:layout_height="56dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/txt_delete"
+                    android:tag="binding_16"             
+                                                                                         
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+         

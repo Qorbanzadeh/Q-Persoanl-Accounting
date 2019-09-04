@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/overviewFragment"
+        android:icon="@drawable/ic_dashboard_dark"
+        android:checkable="true"
+        android:checked="true"
+        android:title="@string/title_overview" />
+
+    <item
+        android:id="@+id/categoriesFragment"
+        android:icon="@drawable/ic_style_dark"
+        android:checkable="true"
+        android:title="@string/title_categories" />
+
+    <item
+        android:id="@+id/cashEntriesFragment"
+        android:icon="@drawable/ic_view_list_black"
+        android:checkable="true"
+        android:title="@string/title_cash_entries" />
+
+    <item
+        android:id="@+id/settingFragment"
+        android:icon="@drawable/ic_more_horiz_dark"
+        android:checkable="true"
+        android:title="@string/more" />
+
+</menu>

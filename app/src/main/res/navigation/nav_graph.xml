@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/overviewFragment">
+
+    <fragment
+        android:id="@+id/overviewFragment"
+        android:name="me.muhammadali.qpersonalaccounting.ui.overview.OverviewFragment"
+        android:label="fragment_overview"
+        tools:layout="@layout/fragment_overview" >
+        <action
+            android:id="@+id/action_overviewFragment_to_editCashEntryFragment"
+            app:destination="@id/editCashEntryFragment"
+            app:enterAnim="@anim/nav_slide_up_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_slide_up_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="me.muhammadali.qpersonalaccounting.ui.category.CategoriesFragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_categoriesFragment_to_editCategoryFragment"
+            app:destination="@id/editCategoryFragment"
+            app:enterAnim="@anim/nav_slide_up_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_slide_up_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/editCategoryFragment"
+        android:name="me.muhammadali.qpersonalaccounting.ui.category.EditCategoryFragment"
+        android:label="fragment_edit_category"
+        tools:layout="@layout/fragment_edit_category">
+    </fragment>
+    <fragment
+        android:id="@+id/cashEntriesFragment"
+        android:name="me.muhammadali.qpersonalaccounting.ui.cashentry.CashEntriesFragment"
+        android:label="CashEntriesFragment"
+        tools:layout="@layout/fragment_cashentries">
+        <action
+            android:id="@+id/action_cashEntriesFragment_to_editCashEntryFragment"
+            app:destination="@id/editCashEntryFragment"
+            app:enterAnim="@anim/nav_slide_up_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_slide_up_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/cashEntryReportFragment"
+        android:name="me.muhammadali.qpersonalaccounting.ui.report.CashEntryReportFragment"
+        android:label="CashEntryReportFragment"
+        tools:layout="@layout/fragment_cashentry_report"/>
+    <fragment
+        android:id="@+id/editCashEntryFragment"
+        android:name="me.muhammadali.qpersonalaccounting.ui.cashentry.EditCashEntryFragment"
+        android:label="EditCashEntryFragment"
+        tools:layout="@layout/fragment_edit_cashentry"/>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="me.muhammadali.qpersonalaccounting.ui.setting.SettingFragment"
+        android:label="SettingFragment"
+        tools:layout="@layout/fragment_more">
+        <action
+            android:id="@+id/action_settingFragment_to_cashEntryReportFragment"
+            app:destination="@id/cashEntryReportFragment"
+            app:enterAnim="@anim/nav_slide_enter_anim"
+            app:exitAnim="@anim/nav_slide_exit_anim"
+            app:popEnterAnim="@anim/nav_slide_pop_enter_anim"
+            app:popExitAnim="@anim/nav_slide_pop_exit_anim" />
+    </fragment>
+</navigation>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#2196F3</color>
+   <!-- <color name="colorAccent">#FD5D5D</color>-->
+    <color name="colorAccent">#03A9F4</color>
+
+    <color name="colorYellow">#ffc400</color>
+
+    <color name="colorNavActivated">#231ba261</color>
+    <color name="colorDim">#1EFFFFFF</color>
+
+    <color name="colorDelete">#f13a37</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="colorHighLight">#14000000</color>
+    <color name="colorBackground">#f2f2f2</color>
+</resources>

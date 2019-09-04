@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">حسابدار شخصی کیو</string>
+
+    <string name="name">name</string>
+    <string name="navigation_open">navigation open</string>
+    <string name="navigation_close">navigation close</string>
+
+    <string name="title_overview">صفحه اصلی</string>
+    <string name="title_cash_entries">گزارش گیری</string>
+    <string name="title_categories">دسته بندی ها</string>
+    <string name="reports">گزارشات</string>
+    <string name="title_edit_income">%s درآمد</string>
+    <string name="title_edit_expense">%s هزینه</string>
+    <string name="title_edit_category">%s دسته بندی</string>
+    <string name="title_edit_entry">%s ورودی</string>
+
+    <string name="edit">ویرایش</string>
+    <string name="create">ایجاد کردن</string>
+
+    <string name="category_name_require">اسم دسته بندی نباید خالی باشد</string>
+    <string name="entry_title_require">تیتر نباید خالی باشد</string>
+    <string name="entry_amount_require">مقدار نامعتبر است</string>
+    <string name="entry_category_require">لطفا یک دسته بندی انتخاب کنید</string>
+
+    <string name="category_save_error">این دسته بندی قابل ذخیره سازی نیست</string>
+    <string name="expense_save_error">هزینه قابل ذخیره سازی نیست</string>
+    <string name="income_save_error">درآمد قابل ذخیره سازی نیست</string>
+    <string name="entry_save_error">ورودی نادرست است</string>
+
+    <string name="category_delete_error">این دسته بندی را نمی توانید حذف کنید</string>
+    <string name="entry_delete_error">ورودی قابل حذف نیست</string>
+
+    <string name="hint_name">اسم</string>
+    <string name="hint_title">تیتر</string>
+    <string name="hint_amount">مقدار</string>
+    <string name="hint_category">دسته بندی</string>
+    <string name="hint_date">تاریخ</string>
+    <string name="hint_description">توضیحات (اختیاری)</string>
+
+    <string name="txt_delete">حذف</string>
+    <string name="txt_no_data">چیزی ثبت نشده است</string>
+
+    <string name="label_total">کل</string>
+    <string name="setting">تنظیمات</string>
+    <string name="more">بیشتر</string>
+    <string name="expense">هزینه</string>
+    <string name="income">درآمد</string>
+    <string name="daily_report">گزارش روزانه</string>
+    <string name="monthly_report">گزارش ماهانه</string>
+    <string name="backup">پشتیبان گیری</string>
+    <string name="restore">بازگرداندن پشتیبان</string>
+    <string name="choose">انتخاب کنید</string>
+
+    <string-array name="category_types">
+        <item>هزینه</item>
+        <item>درآمد</item>
+    </string-array>
+</resources>

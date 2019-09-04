@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/muhammadali/AndroidStudioProjects/wallet-ledger/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_edit_category.xml",
+        "source": "/home/muhammadali/AndroidStudioProjects/wallet-ledger/app/src/main/res/layout/fragment_edit_category.xml"
+    },
+    {
+        "merged": "/home/muhammadali/AndroidStudioProjects/wallet-ledger/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_category_with_amount.xml",
+        "source": "/home/muhammadali/AndroidStudioProjects/wallet-ledger/app/src/main/res/layout/layout_category_with_amount.xml"
+    },
+    {
+        "merged": "/home/muhammadali/AndroidStudioProjects/wallet-ledger/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_edit_cashentry.xml",
+        "source": "/home/muhammadali/AndroidStudioProjects/wallet-ledger/app/src/main/res/layout/fragment_edit_cashentry.xml"
+    },
+    {
+        "merged": "/home/muhammadali/AndroidStudioProjects/wallet-ledger/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_category_spinner_item.xml",
+        "source": "/home/muhammadali/AndroidStudioProjects/wallet-ledger/app/src/main/res/layout/layout_category_spinner_item.xml"
+    },
+    {
+        "merged": "/home/muhammadali/AndroidStudioProjects/wallet-ledger/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_cashentry_with_category.xml",
+        "source": "/home/muhammadali/AndroidStudioProjects/wallet-ledger/app/src/main/res/layout/layout_cashentry_with_category.xml"
+    },
+    {
+        "merged": "/home/muhammadali/AndroidStudioProjects/wallet-ledger/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/layout_list_header.xml",
+        "source": "/home/muhammadali/AndroidStudioProjects/wallet-ledger/app/src/main/res/layout/layout_list_header.xml"
+    }
+]
